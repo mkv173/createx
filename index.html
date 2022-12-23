@@ -42,12 +42,13 @@
                     <a href="#" target="_blank" class="login"> Register</a>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="container">
         <div class="logo-bar">
-            <div class="logo"><img src="assets/img/logo.png" alt="logo"></div>
+            <div class="logo">
+                <a href="#" target="_blank"><img src="assets/img/logo.png" alt="logo"></a>
+            </div>
             <ul class="menu">
                 <li>
                     <a href="#" target="_blank" class="menu__link">Women</a>
@@ -68,26 +69,28 @@
             <div class="search">
                 <form class="search-form">
                     <input class="search-text" type="text" placeholder="Search for products...">
-                    <button class="button" type="submit"></button>
+                    <button class="magnifier" type="submit"></button>
                 </form>
             </div>
             <div class="toolbar">
                 <div class="wishlist">
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <a href="#" target="_blank">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                     <span>2</span>
                 </div>
                 <div class="border">
                     <hr>
                 </div>
                 <div class="wishlist">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <a href="#" target="_blank">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                     <span>4</span>
                 </div>
             </div>
         </div>
     </div>
     <div class="carousel">
-        <p class="inner-text">Up to 70% Off.<span> Shop our latest sale styles</span></p>
+        <p class="inner-text">Up to 70% Off. <span>  Shop our latest sale styles</span></p>
     </div>
 </header>
 <main class="main">
@@ -95,69 +98,490 @@
         <div class="container">
             <p class="new-collection">New collection</p>
             <p class="menswear">Menswear 2020</p>
-            <button class="buttons buttons_outline" type="submit">Shop sale</button>
-            <button class="buttons buttons_solid" type="submit">Shop the menswear</button>
+            <button class="button button_outline" type="submit">Shop sale</button>
+            <button class="button button_solid" type="submit">Shop the menswear</button>
         </div>
     </div>
     <section>
         <div class="container">
             <div class="top-categories">
                 <div class="top-categories-image">
-                    <img src="assets/img/women's.png" alt="women's">
+                    <img class="top-img" src="assets/img/women's.png" alt="women's">
                     <p class="text">Women's</p>
                 </div>
                 <div class="top-categories-image">
-                    <img src="assets/img/men's.png" alt="men's">
+                    <img class="top-img" src="assets/img/men's.png" alt="men's">
                     <p class="text">Men's</p>
                 </div>
                 <div class="top-categories-image">
-                    <img src="assets/img/kids'.png" alt="kids'">
+                    <img class="top-img" src="assets/img/kids'.png" alt="kids'">
                     <p class="text">Kids'</p>
                 </div>
             </div>
         </div>
     </section>
     <section>
+        <div class="wide-container">
             <div class="new-arrivals">
-                <p class="new-arrivals-text">New arrivals</p>
-                <p class="new-arrivals-text-collection">Check out our latest arrivals for the upcoming season</p>
-                <p class="new-arrivals-text-collection new-arrivals-text-collection_green">See the collection here</p>
-                <div class="new-arrivals-carousel">
-                    <div class="new-arrivals-carousel-image">
-                        <img src="assets/img/cape.png" alt="photo">
-                        <p class="product-name">Black and white sport cap</p>
-                        <p class="price">$18.15</p>
+                <div class="new-arrivals-center">
+                    <p class="new-arrivals-text category-title">New arrivals</p>
+                    <p class="new-arrivals-text-collection">Check out our latest arrivals for the upcoming season</p>
+                    <p class="new-arrivals-text-collection new-arrivals-text-collection_green">See the collection here</p>
+                </div>
+                <div class="product-row">
+                    <div class="product-item product-item_small">
+                        <div class="product-item__img_small-wrap">
+                            <img class="product-item__img" src="assets/img/cape.png" alt="photo">
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="5 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="4 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="3 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="2 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <p class="product-item__name">Black and white sport cap</p>
+                        <p class="product-item__price">$18.15</p>
                     </div>
-                    <div class="new-arrivals-carousel-image">
-                        <img src="assets/img/sunglasses.png" alt="photo">
-                        <p class="product-name">Metal bridge sunglasses</p>
-                        <p class="price">$18.15</p>
+                    <div class="product-item product-item_small">
+                        <div class="product-item__img_small-wrap">
+                            <img class="product-item__img" src="assets/img/sunglasses.png" alt="photo">
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <p class="product-item__name">Metal bridge sunglasses</p>
+                        <p class="product-item__price">$18.15</p>
                     </div>
-                    <div class="new-arrivals-carousel-image">
-                        <img src="assets/img/romper.png" alt="photo">
-                        <p class="product-name">Green baby romper</p>
-                        <p class="price">$18.15</p>
+                    <div class="product-item product-item_small">
+                        <div class="product-item__img_small-wrap">
+                            <img class="product-item__img" src="assets/img/romper.png" alt="photo">
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="5 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="4 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="3 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="2 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <p class="product-item__name">Green baby romper</p>
+                        <p class="product-item__price">$18.15</p>
                     </div>
-                    <div class="new-arrivals-carousel-image">
-                        <img src="assets/img/jeans.png" alt="photo">
-                        <p class="product-name">Mid-rise slim cropped fit jeans</p>
-                        <p class="price">$18.15</p>
+                    <div class="product-item product-item_small">
+                        <div class="product-item__img_small-wrap">
+                            <img class="product-item__img" src="assets/img/jeans.png" alt="photo">
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <p class="product-item__name">Mid-rise slim cropped fit jeans</p>
+                        <p class="product-item__price">$18.15</p>
                     </div>
-                    <div class="new-arrivals-carousel-image">
-                        <img src="assets/img/earrings.png" alt="photo">
-                        <p class="product-name">Red dangle earrings</p>
-                        <p class="price">$18.15</p>
+                    <div class="product-item product-item_small">
+                        <div class="product-item__img_small-wrap">
+                            <img class="product-item__img" src="assets/img/earrings.png" alt="photo">
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="5 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="4 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="3 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="2 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <p class="product-item__name">Red dangle earrings</p>
+                        <p class="product-item__price">$18.15</p>
                     </div>
-                    <div class="new-arrivals-carousel-image">
-                        <img src="assets/img/laces.png" alt="photo">
-                        <p class="product-name">Baby shoes with laces</p>
-                        <p class="price">$18.15</p>
+                    <div class="product-item product-item_small">
+                        <div class="product-item__img_small-wrap">
+                            <img class="product-item__img" src="assets/img/laces.png" alt="photo">
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <p class="product-item__name">Baby shoes with laces</p>
+                        <p class="product-item__price">$18.15</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="wide-container">
+            <div class="banners">
+                <div class="banner banner1">
+                    <p class="banner-text">Summer Collections</p>
+                    <p class="banner-heading">Sale Up to 70%</p>
+                    <button class="button banner-button">Explore new prices</button>
+                </div>
+                <div class="banner banner2">
+                    <p class="banner-text">Deal of the week</p>
+                    <p class="banner-heading">Stay Warm With Our<br>New Sweaters</p>
+                    <button class="button banner-button">Shop now</button>
+                    <p class="banner-text">Limited time offer</p>
+                    <div class="countdown">
+                        <div class="days">
+                            <p class="time">06</p>
+                            <p class="data">Days</p>
+                        </div>
+                        <div class="days">
+                            <p class="time">18</p>
+                            <p class="data">Hours</p>
+                        </div>
+                        <div class="days">
+                            <p class="time">24</p>
+                            <p class="data">Mins</p>
+                        </div>
+                        <div class="days">
+                            <p class="time">12</p>
+                            <p class="data">Sec</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" banner banner3">
+                    <p class="banner-text">New collection</p>
+                    <p class="banner-heading">Shoes & Bags<br>
+                        autumn / winter 2020 </p>
+                    <button class="button banner-button">See offers &#10141</button>
+                </div>
+                <div class="banner banner4">
+                    <p class="banner-text">For All new Email Subscribers</p>
+                    <p class="banner-heading banner-heading-label">Get 5% Off & Free Delivery</p>
+                    <p class="label">Email</p>
+                    <div class="email">
+                        <input class="label-text" type="text" placeholder="Your working email" name="mail" required>
+                        <input class="subscribe" type="submit" value="Subscribe">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="categories">
+                <p class="category-title">Popular categories</p>
+                <div class="category-popular">
+                    <div class="category-card">
+                        <img class="category-card__img" src="assets/img/tops.png" alt="foto">
+                        <p class="category-card__text">Tops</p>
+                    </div>
+                    <div class="category-card">
+                        <img class="category-card__img" src="assets/img/t-shirts.png" alt="foto">
+                        <p class="category-card__text">T-shits</p>
+                    </div>
+                    <div class="category-card">
+                        <img class="category-card__img" src="assets/img/caps.png" alt="foto">
+                        <p class="category-card__text">Caps</p>
+                    </div>
+                    <div class="category-card">
+                        <img class="category-card__img" src="assets/img/sandals.png" alt="foto">
+                        <p class="category-card__text">Sandals</p>
+                    </div>
+                    <div class="category-card">
+                        <img class="category-card__img" src="assets/img/jackets.png" alt="foto">
+                        <p class="category-card__text">Jackets</p>
+                    </div>
+                    <div class="category-card">
+                        <img class="category-card__img" src="assets/img/coats.png" alt="foto">
+                        <p class="category-card__text">Coats</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="trending-now">
+            <div class="container">
+                <p class="category-title">Trending now</p>
+                <div class="trending-now-card">
+                    <div class="product-item">
+                        <div class="product-item__img-wrap">
+                            <img class="product-item__img" src="assets/img/shirt.png" alt="shirt">
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="5 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="4 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="3 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="2 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="product-item__info">
+                            <p class="product-item__name">Shirt with insertion lace trims</p>
+                            <p class="product-item__price">$18.15</p>
+                        </div>
+                        <div class="product-item__info product-item__info_active">
+                            <div class="product-selection">
+                                <div class="size">
+                                    <button class="size__button">36</button>
+                                    <button class="size__button">37</button>
+                                    <button class="size__button">38</button>
+                                    <button class="size__button">39</button>
+                                    <button class="size__button">40</button>
+                                </div>
+                                <div class="color">
+                                    <button class="color__button color__button_active"></button>
+                                    <button class="color__button"></button>
+                                    <button class="color__button"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="button button_add">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img-wrap">
+                            <img class="product-item__img" src="assets/img/chrono.png" alt="chrono">
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="5 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="4 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="3 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="2 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="product-item__info">
+                            <p class="product-item__name">Chrono watch with blue leather belt</p>
+                            <p class="product-item__price">$18.15</p>
+                        </div>
+                        <div class="product-item__info product-item__info_active">
+                            <div class="product-selection">
+                                <div class="size">
+                                    <button class="size__button">36</button>
+                                    <button class="size__button">37</button>
+                                    <button class="size__button">38</button>
+                                    <button class="size__button">39</button>
+                                    <button class="size__button">40</button>
+                                </div>
+                                <div class="color">
+                                    <button class="color__button color__button_active"></button>
+                                    <button class="color__button"></button>
+                                    <button class="color__button"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="button button_add">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img-wrap">
+                            <img class="product-item__img" src="assets/img/check.png" alt="chek">
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="5 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="4 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="3 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="2 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="product-item__info">
+                            <p class="product-item__name">Check coat with colour contrast</p>
+                            <p class="product-item__price">$18.15</p>
+                        </div>
+                        <div class="product-item__info product-item__info_active">
+                            <div class="product-selection">
+                                <div class="size">
+                                    <button class="size__button">36</button>
+                                    <button class="size__button">37</button>
+                                    <button class="size__button">38</button>
+                                    <button class="size__button">39</button>
+                                    <button class="size__button">40</button>
+                                </div>
+                                <div class="color">
+                                    <button class="color__button color__button_active"></button>
+                                    <button class="color__button"></button>
+                                    <button class="color__button"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="button button_add">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="button">Explore top sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sale">
+            <div class="container">
+                <p class="category-title ">Sale up to 70%</p>
+                <div class="sale-card">
+                    <div class="product-item">
+                        <div class="product-item__img-wrap">
+                            <img class="product-item__img" src="assets/img/bag.png" alt="bag">
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="5 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="4 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="3 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="2 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="product-item__info">
+                            <p class="product-item__name">Leather crossbody bag with gold hardware</p>
+                            <p class="product-item__price">$18.15</p>
+                        </div>
+                        <div class="product-item__info product-item__info_active">
+                            <div class="product-selection">
+                                <div class="size">
+                                    <button class="size__button">36</button>
+                                    <button class="size__button">37</button>
+                                    <button class="size__button">38</button>
+                                    <button class="size__button">39</button>
+                                    <button class="size__button">40</button>
+                                </div>
+                                <div class="color">
+                                    <button class="color__button color__button_active"></button>
+                                    <button class="color__button"></button>
+                                    <button class="color__button"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="button button_add">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img-wrap">
+                            <img class="product-item__img" src="assets/img/skinny jeans.png" alt="jeans">
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="5 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="4 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="3 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="2 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="product-item__info">
+                            <p class="product-item__name">Skinny push-up jeans</p>
+                            <p class="product-item__price">$18.15</p>
+                        </div>
+                        <div class="product-item__info product-item__info_active">
+                            <div class="product-selection">
+                                <div class="size">
+                                    <button class="size__button">36</button>
+                                    <button class="size__button">37</button>
+                                    <button class="size__button">38</button>
+                                    <button class="size__button">39</button>
+                                    <button class="size__button">40</button>
+                                </div>
+                                <div class="color">
+                                    <button class="color__button color__button_active"></button>
+                                    <button class="color__button"></button>
+                                    <button class="color__button"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="button button_add">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img-wrap">
+                            <img class="product-item__img" src="assets/img/boots.png" alt="boots">
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="5 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="4 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="3 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="2 out of 5 stars"></label>
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                            <div class="heart">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="product-item__info">
+                            <p class="product-item__name">Wide heel suede ankle boots</p>
+                            <p class="product-item__price">$18.15</p>
+                        </div>
+                        <div class="product-item__info product-item__info_active">
+                            <div class="product-selection">
+                                <div class="size">
+                                    <button class="size__button">36</button>
+                                    <button class="size__button">37</button>
+                                    <button class="size__button">38</button>
+                                    <button class="size__button">39</button>
+                                    <button class="size__button">40</button>
+                                </div>
+                                <div class="color">
+                                    <button class="color__button color__button_active" style="background-color: #1E212C "></button>
+                                    <button class="color__button"></button>
+                                    <button class="color__button"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="button button_add">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="button">See all sale products</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cta">
+            <div class="container">
+
+            </div>
+        </div>
+
     </section>
 </main>
-
 
 
 <script src="assets/js/script.js"></script>

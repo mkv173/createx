@@ -5,6 +5,7 @@
 }
 a {
     color: inherit;
+    text-decoration: none;
 }
 .body {
     font-family: Lato;
@@ -44,7 +45,6 @@ a {
     margin-right: 195px;
 }
 .menu-secondary__link {
-    text-decoration: none;
 }
 .lang-currency {
     margin-right: 60px;
@@ -58,7 +58,7 @@ a {
     display: flex;
 }
 .login {
-    text-decoration: none;
+
 }
 .Profile {
 
@@ -79,7 +79,6 @@ a {
     margin-right: 129px;
 }
 .menu__link {
-    text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
@@ -94,7 +93,7 @@ a {
     width: 380px;
     margin: 0 auto;
 }
-.search-text, .magnifier {
+.search-text .magnifier {
     border: none;
     outline: none;
     border-radius: 4px;
@@ -253,7 +252,7 @@ hr {
 }
 .product-item__img {
     display: block;
-    /*width: 100%;*/
+    width: 100%;
     object-fit: cover;
 }
 .product-item__img-wrap {
@@ -280,7 +279,7 @@ hr {
 }
 .banners {
     display: flex;
-    gap: 16px;
+    gap: 14px;
     margin-bottom: 180px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -289,6 +288,7 @@ hr {
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 60px;
 }
 .banner1 {
     background-image: url("../img/banner1.png");
@@ -308,11 +308,10 @@ hr {
 }
 .banner-text {
     font-weight: 700;
-    margin: 60px auto 12px 60px;
+    margin-bottom: 12px;
     color: #1E212C;
 }
 .banner-heading {
-    margin-left: 60px;
     margin-bottom: 40px;
     font-weight: 900;
     font-size: 32px;
@@ -321,37 +320,34 @@ hr {
     width: 320px;
 }
 .banner-button {
-    margin-left: 60px;
     line-height: 44px;
     padding: 0 32px;
     background: transparent;
     color: #17696A;
+    margin-bottom: 80px;
 }
 .banner-heading-label {
     margin-bottom: 32px;
 }
 .label {
-    margin-left: 60px;
     margin-bottom: 8px;
 }
 .label-text {
-    margin-left: 60px;
     padding: 12px 97px 12px 16px;
     background: #FFFFFF;
     border: 1px solid #D7DADD;
-    border-radius: 4px;
+    border-radius: 4px 0 0 4px;
 }
-.subscribe {
+.subscribe-button {
     color: #FFFFFF;
     background: #17696A;
     font-weight: 700;
-    line-height: 44px;
+    line-height: 40px;
     padding: 0 32px;
-    border-radius: 4px;
+    border-radius: 0 4px 4px 0;
     border: none;
 }
 .countdown {
-    margin-left: 60px;
     display: flex;
     gap: 24px;
 }
@@ -461,10 +457,234 @@ hr {
     gap: 30px;
     margin-bottom: 12px;
 }
-.cta {
+.cta_background {
     height: 300px;
     background: #1E212C;
+    margin-bottom: -330px;
 }
+.cta {
+    display: flex;
+    gap: 165px;
+}
+.mobile-shopping {
+    padding: 110px 0;
+}
+.mobile-shopping__text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.mobile-shopping__application {
+    display: flex;
+    gap: 24px;
+    padding: 24px 0;
+}
+.services {
+    display: flex;
+    padding: 120px 0 180px;
+    justify-content: space-between;
+}
+.icon-box {
+    text-align: center;
+    padding: 0 45px;
+    border-right: 1px solid;
+    /*border-image: linear-gradient(*/
+    /*        to bottom,*/
+    /*        rgba(218, 219, 221, 1),*/
+    /*        rgba(0, 0, 0, 0)*/
+    /*) 1;*/
+    border-image: linear-gradient(0deg, rgba(218,219,221,0) 0%, rgba(218,219,221,0.5) 25%, rgba(218,219,221,1) 50%, rgba(218,219,221,0.5) 75%, rgba(218,219,221,0) 100%);;
+    border-image-slice: 1;
+}
+.services .icon-box:first-child {
+    padding-left: 0;
+}
+.services .icon-box:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+.icon-box__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 24px 0 8px;
+}
+.icon-box__text_small {
+    font-size: 16px;
+    color: #787A80;
+    line-height: 160%;
+}
+.instagram {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 180px;
+}
+.instagram__text {
+    margin-right: 80px;
+}
+.instagram__text_small {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.instagram__button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background: transparent;
+}
+.instagram__button span {
+    color: #17696A;
+    font-size: 14px;
+}
+.fashion-blog {
+    margin-bottom: 120px;
+}
+.fashion-blog__title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.banner-button_fashion {
+    font-size: 14px;
+}
+.blog {
+    display: flex;
+    gap: 30px;
+}
+.blog__card__text {
+    padding: 24px 24px 21px;
+    box-shadow: 0 80px 80px -20px #1E212C26;
+}
+.blog__card__text .icon-box__text {
+    margin: 0 0 12px;
+}
+.meta {
+    display: flex;
+    color: #787A80;
+    margin-bottom: 16px;
+    align-items: center;
+}
+.meta p {
+    padding: 0 12px;
+    border-right: 1px solid #787A80;
+}
+.meta p:first-child {
+    padding-left: 0;
+}
+.meta p:last-child {
+    padding: 0;
+    border-right: none;
+}
+.comment {
+    display: flex;
+    gap: 8px;
+    margin-left: 12px;
+    align-items: center;
+}
+.icon-box__text_green {
+    color: #17696A;
+}
+
+.brand-logo {
+    margin-bottom: 120px;
+}
+.brand-logo_bar {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+.subscribe {
+    background: rgba(244, 245, 246, 1);
+    padding: 65px 0;
+}
+.subscribe__box {
+    display: flex;
+    gap: 274px;
+    align-items: center;
+}
+.checkboxes {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+.button_small {
+    font-size: 14px;
+    padding: 0 16px;
+    line-height: 30px;
+    color: #787A80;
+    background: transparent;
+    border: 1px solid #D7DADD;
+
+}
+.subscribe__label-text {
+    font-size: 16px;
+    line-height: 25px;
+}
+.subscribe__subscribe-button {
+    font-size: 16px;
+    line-height: 50px;
+}
+.subscribe .category-title {
+    margin-bottom: 24px;
+}
+.subscribe .text {
+    font-weight: 400;
+    color: #787A80;
+    margin-bottom: 32px;
+}
+.email {
+    margin-bottom: 20px;
+}
+.footer {
+    background: #1E212C;
+    padding: 60px 0 32px;
+}
+.footer__box {
+    display: flex;
+    gap: 151px;
+    margin-bottom: 60px;
+}
+.footer-menu {
+    list-style-type: none;
+    color: #FFFFFF;
+}
+.footer-menu li:first-child {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.footer-menu .menu__link {
+    color: #FFFFFF;
+}
+.footer-menu span {
+    color: #FFFFFF;
+}
+.socilas {
+    padding: 24px 0;
+    display: flex;
+    gap: 12px;
+}
+.copyright {
+    padding: 24px 0 0;
+    border-top: 1px solid #FFFFFF;
+}
+.copyright__box {
+    display: flex;
+    justify-content: space-between;
+}
+.copyright__text {
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+
+
 
 
 

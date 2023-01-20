@@ -23,89 +23,73 @@ a {
     margin: 0 auto;
     padding: 0 30px;
 }
-.top-bar_background {
+.top-bar {
     background: #1E212C;
 }
-.top-bar {
+.top-bar__body {
     display: flex;
-    align-items: center;
     color: #FFFFFF;
     opacity: 0.6;
+    padding: 11px 0 12px;
 }
-.contacts {
+.top-bar__contacts {
     font-weight: 900;
-    padding: 12px 0;
     margin-right: 225px;
 }
-.menu-secondary {
+.top-bar__menu {
     display: flex;
     list-style-type: none;
     gap: 32px;
-    padding: 13px 0;
     margin-right: 195px;
 }
-.menu-secondary__link {
-}
-.lang-currency {
+.top-bar__currency {
     margin-right: 60px;
-    padding: 13px 0;
 }
-.language {
-
+.top-bar__currency select {
+    background: transparent;
+    color: white;
+    border: none;
 }
-.account {
-    padding: 13px 0;
-    display: flex;
-}
-.login {
-
-}
-.Profile {
-
-}
-
-.logo-bar {
+/*.account {*/
+/*}*/
+.main-bar {
     display: flex;
     align-items: center;
+    padding: 35px 0 26px;
 }
-.logo {
-    padding: 33px 0;
+.main-bar__logo {
     margin-right: 70px;
  }
-.menu {
+.main-bar__menu {
     display: flex;
     list-style-type: none;
     gap: 40px;
     margin-right: 129px;
-}
-.menu__link {
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
     color: #424551;
 }
-.search {
-    margin-right: 45px;
-}
-
 .search-form {
     position: relative;
-    width: 380px;
-    margin: 0 auto;
+    width: 100%;
 }
-.search-text .magnifier {
+.main-bar__search {
+    margin-right: 45px;
+}
+.search-form__button {
     border: none;
     outline: none;
-    border-radius: 4px;
 }
-.search-text {
+.search-form__input {
     width: 100%;
     height: 44px;
     background: #FFFFFF;
     padding: 0 25px 0 15px;
     border: 1px solid #D7DADD;
+    border-radius: 4px;
 }
-.magnifier {
+.search-form__button {
     height: 26px;
     width: 26px;
     position: absolute;
@@ -114,23 +98,21 @@ a {
     background: #FFFFFF;
     cursor: pointer;
 }
-.magnifier:before {
+.search-form__button:before {
     content: "\f002";
     font-family: FontAwesome;
     color: #424551;
-    font-weight: normal;
 }
-.toolbar {
+.main-bar__toolbar {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.wishlist {
+.main-bar__wishlist {
     display: flex;
     gap: 10px;
-    align-items: center;
 }
-hr {
+.main-bar__toolbar hr {
     width: 22px;
     height: 1px;
     transform: rotate(90deg);

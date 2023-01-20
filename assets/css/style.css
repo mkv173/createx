@@ -21,7 +21,7 @@ a {
 .wide-container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 .top-bar {
     background: #1E212C;
@@ -117,18 +117,18 @@ a {
     height: 1px;
     transform: rotate(90deg);
 }
-.carousel {
+.special-offers {
     background: #17696A;
     text-align: center;
 }
-.inner-text {
+.special-offers__text {
     font-weight: 900;
     font-size: 12px;
     line-height: 18px;
     color: #FFFFFF;
     padding: 8px 0;
 }
-.inner-text span {
+.special-offers__text span {
     font-weight: 400;
     text-decoration: underline;
 }
@@ -139,15 +139,15 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
+    padding: 140px 0 180px;
 }
-.new-collection {
+.hero-slider__text {
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
-    padding-top: 140px;
     margin-bottom: 12px;
 }
-.menswear {
+.hero-slider__text_big {
     font-weight: 900;
     font-size: 72px;
     line-height: 94px;
@@ -163,11 +163,11 @@ a {
     line-height: 52px;
     cursor: pointer;
 }
-.button_outline {
+.hero-slider__button {
     background: transparent;
     color: #17696A;
 }
-.button_solid {
+.hero-slider__button_solid {
     background: #17696A;
     color: #FFFFFF;
 }
@@ -175,9 +175,9 @@ a {
     display: flex;
     gap: 30px;
     margin-top: -60px;
-    margin-bottom: 82px;
+    padding: 0 0 82px;
 }
-.top-categories-image {
+.top-categories__image {
     text-align: center;
 }
 .top-img {
@@ -185,33 +185,33 @@ a {
     height: 390px;
     margin-bottom: 16px;
 }
-.text {
+.categories__name {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
 }
 .new-arrivals {
-    margin-bottom: 278px;
-}
-.new-arrivals-center {
-    text-align: center;
-}
+    padding: 0 0 275px;
 
-.category-title {
+}
+.new-arrivals__heading {
+    text-align: center;
+    padding: 0 0 60px;
+}
+.heading {
     font-weight: 900;
     font-size: 46px;
     line-height: 59px;
     margin-bottom: 60px;
 }
-.new-arrivals-text {
+.new-arrivals_heading {
     margin-bottom: 24px;
 }
-.new-arrivals-text-collection {
+.new-arrivals__text_small {
     font-size: 18px;
     line-height: 27px;
 }
-.new-arrivals-text-collection_green {
-    margin-bottom: 60px;
+.new-arrivals__text_small span {
     text-decoration: underline;
     color: #17696A;
 }
@@ -237,20 +237,17 @@ a {
     width: 100%;
     object-fit: cover;
 }
-.product-item__img-wrap {
-    position: relative;
-    margin-bottom: 16px;
-    height: 440px;
-    display: flex;
-}
-.product-item__img_small-wrap {
+.product-item__wrap {
     position: relative;
     margin-bottom: 16px;
     height: 320px;
     display: flex;
 }
+.product-item__wrap_big {
+    height: 440px;
+}
 .product-item__name {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 27px;
     margin-bottom: 8px;
 }
@@ -288,27 +285,26 @@ a {
     background-image: url("../img/banner4.png");
     flex-basis: 43%;
 }
-.banner-text {
+.banner__text {
     font-weight: 700;
     margin-bottom: 12px;
     color: #1E212C;
 }
-.banner-heading {
+.banner__heading {
     margin-bottom: 40px;
     font-weight: 900;
     font-size: 32px;
     line-height: 42px;
     color: #1E212C;
-    width: 320px;
 }
-.banner-button {
+.banner__button {
     line-height: 44px;
     padding: 0 32px;
     background: transparent;
     color: #17696A;
     margin-bottom: 80px;
 }
-.banner-heading-label {
+.banner-heading_label {
     margin-bottom: 32px;
 }
 .label {
@@ -342,23 +338,18 @@ a {
     line-height: 42px;
     color: #1E212C;
 }
-.categories {
+.popular-categories {
     text-align: center;
     margin-bottom: 180px;
 }
-.category-popular {
+.popular-categories__body {
     display: flex;
     gap: 30px;
 }
-.category-card__img {
+.popular-categories__img {
     margin-bottom: 24px;
 }
-.category-card__text {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-}
-.trending-now-card {
+.product-card__row {
     display: flex;
     gap: 30px;
     padding-bottom: 12px;
@@ -375,7 +366,7 @@ a {
 .star-rating__wrap {
     display: flex;
 }
-.heart {
+.star-rating__heart {
     position: absolute;
     bottom: 15px;
     right: 15px;
@@ -433,11 +424,6 @@ a {
 }
 .sale {
     padding: 100px 0;
-}
-.sale-card {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 12px;
 }
 .cta_background {
     height: 300px;
@@ -611,10 +597,10 @@ a {
     font-size: 16px;
     line-height: 50px;
 }
-.subscribe .category-title {
+.subscribe .heading {
     margin-bottom: 24px;
 }
-.subscribe .text {
+.subscribe .categories__name {
     font-weight: 400;
     color: #787A80;
     margin-bottom: 32px;
